@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Partie 2</title>
+        <style type="text/css">
+            body {
+                
+            }
+
+            main {
+
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h2>Commencer le questionnaire?</h2>
+            <p>Le questionnaire comporte 20 questions qui permettra au Choixpeau magique de déterminner votre maison</p>
+        </main>
+        <div id="questionnaire">
+
+        </div>
+        <script type="text/javascript">
+            const request = new Request("/questions");
+            var questions = {}
+
+            fetch(request)
+                .then(response => response.json())
+                .then(json => {
+                    questions = json;
+                });
+        </script>
+    </body>
+</html>
