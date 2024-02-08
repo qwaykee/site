@@ -3,31 +3,52 @@
         <title>Partie 2</title>
         <style type="text/css">
             body {
-                
+                text-align: center;
+                background: #262626;
+                font: 1em sans-serif;
+                color: beige;
+                backdrop-filter: blur(20px);
             }
 
-            main {
+            button {
+                padding: 5px 30px;
+                border: none;
+                border-radius: 5px;
+            }
 
+            .background-element {
+                
             }
         </style>
     </head>
     <body>
         <main>
+            <h1>Le Choixpeau magique</h1>
+            <p>Le Choixpeau magique devine dans quelle maison vous appartenez, en fonction de vos réponses au questionnaire.</p>
+
             <h2>Commencer le questionnaire?</h2>
             <p>Le questionnaire comporte 20 questions qui permettra au Choixpeau magique de déterminner votre maison</p>
+            <button id="start">Commencer!</button>
         </main>
         <div id="questionnaire">
 
         </div>
         <script type="text/javascript">
             const request = new Request("/questions");
-            var questions = {}
+            
+            setInterval(createBackground, 1000)
 
-            fetch(request)
-                .then(response => response.json())
-                .then(json => {
-                    questions = json;
-                });
+            function createBackground() {
+                el = document.createElement("DIV")
+
+            }
+
+            document.querySelector("#start").addEventListener("click", e => {
+                fetch(request)
+                    .then(response => response.json())
+                    .then(json => questions.append(json))
+                    .catch(error => alert(error));
+            });
         </script>
     </body>
 </html>
