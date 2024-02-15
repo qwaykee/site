@@ -1,3 +1,5 @@
+[courage, ambition, intelligence, good]
+
 Qu'emporterais tu sur une ile déserte:
   - [0, 0, 1, 0, Une carte]
   - [1, 0, 0, 0, Un couteau aiguisé]
@@ -22,7 +24,7 @@ Tu viens d'être élu Président, quelle est ta première mesure ?:
   - [2, 2, 0, 1, Je déclare la guerre contre le narcotrafiquantisme]
   - [1, 3, 1, -1, J'envahis la Pologne]
 
-La 3e guerre monidale éclate, en tant que civil seul, que fais tu:
+La 3e guerre monidale éclate, en tant que civil seul, que fais tu ?:
   - [-1, -1, 2, 0, Je vais cacher - ce n'est pas mon problème]
   - [2, 1, 0, 0, Je m'engage dans l'infanterie]
   - [1, 0, 0, 3, Je m'engage pour médecin sans frontières]
@@ -36,3 +38,4 @@ On te proposes de torturer ton ami jusqu'au traumatisme, mais vous recevez tout 
   - [0, -1, 1, 1, Jamais - je ne veux pas de regret]
   - [0, 1, 1, 0, Oui - je connais mon ami]
   - [0, 2, 0, -1, Oui - mais c'est juste pour l'argent]
+
