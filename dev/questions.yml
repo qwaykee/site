@@ -30,9 +30,6 @@ La 3e guerre monidale éclate, en tant que civil seul, que fais tu ?:
   - [1, 0, 0, 3, Je m'engage pour médecin sans frontières]
   - [1, 1, 1, 0, Je vais faire des stocks au magasin]
 
-Que penses tu de l'Empire Romain à son apogée:
-  - [0, 0, 1, -1, ]
-
 On te proposes de torturer ton ami jusqu'au traumatisme, mais vous recevez tout les deux 500k€ à la fin, en sachant qu'il n'est pas au courant de l'argent:
   - [0, 0, 0, 3, Jamais - je ne veux pas lui faire du mal]
   - [0, -1, 1, 1, Jamais - je ne veux pas de regret]
@@ -44,3 +41,22 @@ Quand tu joues a des jeux tu es plutôt:
   - [0, 0, 1, 0, Intelligent et organisé]
   - [0, 0, 0, 1, Bienveillant et fiable]
 
+Ta voiture préférée est:
+  - [0, 0, 1, 0, Une fiat multipla - solide et fiable]
+  - [1, 1, 0, 0, Une aston martin valkyrie - rapide et dangereuse]
+  - [0, -1, 0, 1, Je n'aime pas les voitures - je préfère le vélo]
+
+Quel est ton sport préféré:
+  - [1, 0, 0, 0, Le rugby évidemment]
+  - [0, 1, 0, 0, Je préfère le football]
+  - [0, 0, 1, 0, Les échecs bien sûr]
+
+Pourrais-t-on te qualifier de farfadet malicieux:
+- [0, 0, 1, -1, Bien sûr je suis le lutin le plus espiègle de toute la forêt magique]
+- [1, 0, 0, 0, Non évidemment]
+- [0, 0, 1, 0, Hein ????]
+
+Si tu étais un sort tu serais plutôt:
+  - [0, 2, 0, -1, Un sortilège fait pour tuer]
+  - [0, 0, 1, 0, Un sortilège pour dévérouiller toutes les portes]
+  - [1, -1, 0, 1, Un sortilège de protection]
