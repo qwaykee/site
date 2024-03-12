@@ -39,3 +39,8 @@ On te proposes de torturer ton ami jusqu'au traumatisme, mais vous recevez tout 
   - [0, 1, 1, 0, Oui - je connais mon ami]
   - [0, 2, 0, -1, Oui - mais c'est juste pour l'argent]
 
+Quand tu joues a des jeux tu es plutôt:
+  - [0, 2, 0, -1, Sournois et mauvais joueur]
+  - [0, 0, 1, 0, Intelligent et organisé]
+  - [0, 0, 0, 1, Bienveillant et fiable]
+
