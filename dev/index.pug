@@ -1,13 +1,56 @@
-html
-  head
-    title Partie 2
-  body
-    main
-      h1 Le choixpeau magique
-      p Le Choixpeau magique devine dans quelle maison vous appartenez, en fonction de vos réponses au questionnaire.
-
-      h2 Commencer le questionnaire?
-      p Le questionnaire comporte 20 questions qui permettra au Choixpeau magique de déterminner votre maison
-      button#start Commencer
-
-      div#questionnaire
+<html>
+    <head>
+        <title>Partie 2</title>
+        <link rel="shortcut icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu1qHEB3LwWS6b93dw5aWaNRqDmyBg4L3N6R-MkUZUELjxX7awYHgrIrTltffg9d50mDE&usqp=CAU"/>
+        <style type="text/css">
+            body {
+                text-align: center;
+                background: #262626;
+                font: 1em sans-serif;
+                color: beige;
+                backdrop-filter: blur(20px);
+            }
+ 
+            button {
+                padding: 5px 30px;
+                border: none;
+                border-radius: 5px;
+            }
+ 
+            .background-element {
+                
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Le Choixpeau magique</h1>
+            <img src="https://i.ytimg.com/vi/c5a3V1Tf7ig/maxresdefault.jpg" width="300">
+            <p>Le Choixpeau magique devine dans quelle maison vous appartenez, en fonction de vos réponses au questionnaire.</p>
+ 
+            <h2>Commencer le questionnaire?</h2>
+            <p>Le questionnaire comporte 20 questions qui permettra au Choixpeau magique de déterminner votre maison</p>
+            <button id="start">Commencer !</button>
+        </main>
+        <div id="questionnaire">
+ 
+        </div>
+        <script type="text/javascript">
+            const request = new Request("/questions");
+            
+            setInterval(createBackground, 1000)
+ 
+            function createBackground() {
+                el = document.createElement("DIV")
+ 
+            }
+ 
+            document.querySelector("#start").addEventListener("click", e => {
+                fetch(request)
+                    .then(response => response.json())
+                    .then(json => questions.append(json))
+                    .catch(error => alert(error));
+            });
+        </script>
+    </body>
+</html>
