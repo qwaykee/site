@@ -60,3 +60,9 @@ Si tu étais un sort tu serais plutôt:
   - [0, 2, 0, -1, Un sortilège fait pour tuer]
   - [0, 0, 1, 0, Un sortilège pour dévérouiller toutes les portes]
   - [1, -1, 0, 1, Un sortilège de protection]
+
+si tu dois prendre avec toi un personne pour chercher un tresor, tu prendrais plus:
+  - [2, 2, -1, 0, personne, tu te débrouilles très bien tout seul]
+  - [1, 1, 0, 1, un ami a toi]
+  - [2, 3, 0, 1, Jack Sparrow]
+  - [-2, 0, 0, 0, Je n'y vais pas tout simplement]

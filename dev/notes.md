@@ -14,3 +14,6 @@
 
 # utiliser index.pug
 Aller sur pen.new puis dans les parametres de la case html mettre pug dans html preprocessor
+
+# pdf
+le pdf est dans "fonts"
