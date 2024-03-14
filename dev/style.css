@@ -1,15 +1,37 @@
+html[theme="dark"] {
+  --background: #262626;
+  --text: beige;
+}
+
+html[theme="light"] {
+  --background: cyan;
+  --text: beige;
+}
+
 body {
-    text-align: center;
-    background: #262626;
-    font: 1em sans-serif;
-    color: beige;
-    backdrop-filter: blur(20px);
+	text-align: center;
+	background: var(--background);
+	font: 1em sans-serif;
+	color: var(--text);
 }
   
 button {
-    padding: 5px 30px;
-    border: solid 1px rgba(255, 255, 255, 0.01);
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.3);
-    color: white;
+	padding: 5px 30px;
+	border: solid 1px rgba(255, 255, 255, 0.1);
+	border-radius: 50px;
+	background: transparent;
+	color: var(--text);
+	cursor: pointer;
+	display: block; /* sauter des lignes */
+	margin: 5px auto; /* centrer les boutons */
+}
+
+@font-face {
+	font-family: 'Harry P';
+	src: url('./fonts/HarryP.woff2') format('woff2'),
+		url('fonts/HarryP.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+
 }

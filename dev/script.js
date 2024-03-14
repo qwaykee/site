@@ -1,14 +1,20 @@
-const request = new Request("/questions");
+let questions = {
+  [
+    "Qu'emporterais tu sur une ile déserte",
+    [0, 0, 1, 0, "Une carte"],
+    [1, 0, 0, 0, "Un couteau aiguisé"],
+    [0, 1, -1, 0, "Ton télephone"]
+  ]
+}
 
-let questionIndex = 0
-let questions = {}
+const e = e => document.querySelector(e); // shorthand
 
-document.querySelector("#start").addEventListener("click", e => {
-  fetch(request)
-    .then(response => response.json())
-    .then(json => questions.append(json))
-    .catch(error => alert(error));
+e("#start").addEventListener("click", e => {
+  e.srcElement.remove();
+  e("#question").innerText = questions[]
 });
+
+document.querySelectorAll()
 
 // create and place button into div#questionnaire
 function newButton(question, values) {
@@ -26,6 +32,6 @@ function newButton(question, values) {
   document.querySelector("#questionnaire").append(button);
 }
 
-function question(index) {
-  document.querySelector("#questionnaire").innerHTML = "";
+function setQuestion(index) {
+  e("#question").innerHTML = questions[index];
 }

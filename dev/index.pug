@@ -1,56 +1,25 @@
-<html>
-    <head>
-        <title>choixpeau partie 2</title>
-        <link rel="shortcut icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu1qHEB3LwWS6b93dw5aWaNRqDmyBg4L3N6R-MkUZUELjxX7awYHgrIrTltffg9d50mDE&usqp=CAU"/>
-        <style type="text/css">
-            body {
-                text-align: center;
-                background: linear-gradient(#000000, #d3c9c9);
-                font: 1em sans-serif;
-                color: beige;
-                backdrop-filter: blur(20px);
-                }
- 
-            button {
-                padding: 5px 30px;
-                border: none;
-                border-radius: 5px;
-            }
- 
-            .background-element {
-                
-            }
-        </style>
-    </head>
-    <body>
-        <main>
-            <h1>Le Choixpeau magique</h1>
-            <img src="https://i.ytimg.com/vi/c5a3V1Tf7ig/maxresdefault.jpg" width="300">
-            <p>Le Choixpeau magique devine dans quelle maison vous appartenez, en fonction de vos réponses au questionnaire.</p>
- 
-            <h2>Commencer le questionnaire?</h2>
-            <p>Le questionnaire comporte 20 questions qui permettra au Choixpeau magique de déterminner votre maison</p>
-            <button id="start">Commencer !</button>
-        </main>
-        <div id="questionnaire">
- 
-        </div>
-        <script type="text/javascript">
-            const request = new Request("/questions");
-            
-            setInterval(createBackground, 1000)
- 
-            function createBackground() {
-                el = document.createElement("DIV")
- 
-            }
- 
-            document.querySelector("#start").addEventListener("click", e => {
-                fetch(request)
-                    .then(response => response.json())
-                    .then(json => questions.append(json))
-                    .catch(error => alert(error));
-            });
-        </script>
-    </body>
-</html>
+html(theme="dark")
+  head
+	title Partie 2
+	link(rel="shortcut icon", type="image/png", href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu1qHEB3LwWS6b93dw5aWaNRqDmyBg4L3N6R-MkUZUELjxX7awYHgrIrTltffg9d50mDE&usqp=CAU")
+	link(rel="stylesheet", href="style.css")
+	script(src="script.js")
+  body
+	button#theme
+  
+	h1 Le choixpeau magique
+	p#subtitle Le Choixpeau magique devine dans quelle maison vous appartenez, #[br] en fonction de vos réponses au questionnaire. #[br] Le questionnaire comporte 20 questions qui permettront #[br] au Choixpeau magique de déterminer votre maison
+
+	img(src="https://i.ytimg.com/vi/c5a3V1Tf7ig/maxresdefault.jpg", width="300")
+
+	button#start Commencer le questionnaire
+  
+	section#progress
+	section#survey(data-current-question="0")
+	  h4#question Texte de la question
+	  button(data-attributes="0 0 0 0") Réponse avec attributs 0 0 0 0
+	  button(data-attributes="0 0 0 0") Réponse avec attributs 0 0 0 0
+	  button(data-attributes="0 0 0 0") Réponse avec attributs 0 0 0 0
+	  button(data-attributes="0 0 0 0") Réponse avec attributs 0 0 0 0
+	  
+	section#results
