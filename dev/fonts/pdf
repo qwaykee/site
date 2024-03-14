@@ -1,0 +1,17 @@
+Comment a été fait le choix des questions ?
+
+le choix des questions a été fait en fonction de nos envies et des potentiels débouchés que les réponses auraient pu nous donner.
+
+
+Comment avons nous attribué telle réponses à telle caractéristiques?
+
+Nous avons mené une analyse sur les réponses et les caractéristiques associées a ces dernières puis nous avons regardé les différentes méthodes que nous pouvions utiliser pour attribuer des points a ces caractéristiques (courage, ambition, intelligence, bonté).
+Pour prendre un exemple concret, la question Qu’emporterais tu sur une île déserte, la caractéristique d’intelligence sera augmentée avec la réponse Une carte. Au fur et a mesure nous avons crée nos questions en faisant attentions aux réponses possibles
+
+Comment on a testé la fiabilité de notre projet
+
+Pour tester la fiabilité de notre algorithme et de nos questions, nous avons essayé de répondre à notre questionnaire en ayant en tête une maison spécifique, en testant notamment avec les poufsouffle et les serdaigles qui sont les maisons les plus difficiles à obtenir 
+
+Avez vous eu besoin de faire des modifications ? Lesquelles ? Pour quel résultat ?
+
+Au départ, nous avions fait nos questions et ajouté des points au caractéristiques sans assez penser au long terme, a comment cela allait s’adapter à l'algorithme des kPPV. Or, après quelques tests, nous avons pu voir certains problèmes et adapter les points donnés en conséquence.
