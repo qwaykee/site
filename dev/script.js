@@ -19,3 +19,15 @@ document.querySelectorAll()
 function setQuestion(index) {
   e("#question").innerHTML = questions[index];
 }
+function distance(self, character) {
+  return ((self["Courage"] - character["Courage"]) ** 2 
+  +(self["Ambition"] - character["Ambition"]) ** 2
+  +(self["Intelligence"] - charcater["Intelligence"])
+  +(self["Good"] - character["Good"]) ** 2)  ** 0.5;
+}
+
+function add_distances(tab, unknown) {
+  for (player in tab){
+    
+  }
+}
