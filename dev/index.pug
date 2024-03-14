@@ -1,23 +1,35 @@
 html(theme="dark")
   head
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap",
+      rel="stylesheet"
+    )
     title Partie 2
-    link(rel="shortcut icon", type="image/png", href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu1qHEB3LwWS6b93dw5aWaNRqDmyBg4L3N6R-MkUZUELjxX7awYHgrIrTltffg9d50mDE&usqp=CAU")
-    link(rel="stylesheet", href="style.css")
-    script(src="script.js")
   body
-   button#theme
-   
-   h1 Le choixpeau magique
-   p#subtitle Le Choixpeau magique devine dans quelle maison vous appartenez, #[br] en fonction de vos réponses au questionnaire. #[br] Le questionnaire comporte 20 questions qui permettront #[br] au Choixpeau magique de déterminer votre maison
-  
-   button#start Commencer le questionnaire
-   
-   section#progress
-   section#survey(data-current-question="0")
-    h4#question Texte de la question
-    button(data-attributes="0 0 0 0") Réponse avec attributs 0 0 0 0
-    button(data-attributes="0 0 0 0") Réponse avec attributs 0 0 0 0
-    button(data-attributes="0 0 0 0") Réponse avec attributs 0 0 0 0
-    button(data-attributes="0 0 0 0") Réponse avec attributs 0 0 0 0
-    
-   section#results
+    header
+      img(
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b555cca6-60b6-412c-8fbd-dc9aaf3c2740/dbfr8a2-2fe28741-69fe-48af-b0a9-fe7fe86c0fac.png/v1/fill/w_400,h_401/harry_potter_icon_by_rickyrgoetz_dbfr8a2-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDAxIiwicGF0aCI6IlwvZlwvYjU1NWNjYTYtNjBiNi00MTJjLThmYmQtZGM5YWFmM2MyNzQwXC9kYmZyOGEyLTJmZTI4NzQxLTY5ZmUtNDhhZi1iMGE5LWZlN2ZlODZjMGZhYy5wbmciLCJ3aWR0aCI6Ijw9NDAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.v1BZfPQijO-x6bBvYn1nKdNGoy__4J5DOOkumZl-5TA",
+        alt="icon",
+        width="48"
+      )
+      h1 Le choixpeau magique
+      nav
+        a(href="https://github.com/qwaykee/site") GitHub
+        button#theme Theme clair
+
+    p#subtitle Le Choixpeau magique devine dans quelle maison vous appartenez, #[br] en fonction de vos réponses au questionnaire. #[br] Le questionnaire comporte 20 questions qui permettront #[br] au Choixpeau magique de déterminer votre maison
+
+    button#start Commencer le questionnaire
+
+    section#progress
+      span#percentage 0%
+      #progressContainer
+        #progressBar
+      span#progressText 0/0
+
+    section#survey(data-current-question="0")
+      h4#question Texte de la question
+
+    section#results

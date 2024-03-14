@@ -2,6 +2,11 @@
 - Faire 20 questions
 - Faire PDF
 - README.md
+- Importer data.json dans script.js
+- Finir questions.yml
+- Ajouter details a la fin du test -> recommencer, KPPVs
+- Ajouter resultats en temps reel
+- Changer les imports de fichiers en local
 
 # dev -> final
 - Convertir questions.yml en json et ajouter a script.js
