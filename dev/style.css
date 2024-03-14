@@ -26,6 +26,10 @@ button {
 	margin: 5px auto; /* centrer les boutons */
 }
 
+section {
+  display: none;
+}
+
 @font-face {
 	font-family: 'Harry P';
 	src: url('./fonts/HarryP.woff2') format('woff2'),
