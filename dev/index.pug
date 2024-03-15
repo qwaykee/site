@@ -1,4 +1,4 @@
-html(theme="dark")
+Goodhtml(theme="dark")
   head
     link(rel="preconnect", href="https://fonts.googleapis.com")
     link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
@@ -6,6 +6,7 @@ html(theme="dark")
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap",
       rel="stylesheet"
     )
+    link(href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap", rel="stylesheet")
     title Partie 2
   body
     header
@@ -19,7 +20,7 @@ html(theme="dark")
         a(href="https://github.com/qwaykee/site", target='_blank') GitHub #[i.fa-solid.fa-arrow-up-right-from-square]
         button#theme.discreet-button Theme clair
 
-    p#subtitle Le Choixpeau magique devine dans quelle maison vous appartenez, #[br] en fonction de vos réponses au questionnaire. #[br] Le questionnaire comporte 20 questions qui permettront #[br] au Choixpeau magique de déterminer votre maison
+    p#subtitle Le Choixpeau magique devine dans quelle maison vous appartenez, en fonction de vos réponses au questionnaire. Le questionnaire comporte 20 questions qui permettront au Choixpeau magique de déterminer votre maison
 
     button#start Commencer le questionnaire
 
@@ -34,4 +35,8 @@ html(theme="dark")
       button(data-attributes="0,0,0,0") Réponse avec attributs 0 0 0 0
 
     section#results
+      span Resultats
+      span#display Courage: * Ambition: * Intelligence: * Good: *
+      button#toggleResultsDisplay.discreet-button #[i.fa-regular.fa-eye]
+      br
       button#replay.discreet-button Recommencer le questionnaire

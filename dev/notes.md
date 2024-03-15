@@ -3,9 +3,8 @@
 - Faire PDF
 - README.md
 - Importer data.json dans script.js
-- Finir questions.yml
+- Finir questions.yml et changer les valeurs
 - Ajouter KPPVs a la fin du test
-- Ajouter resultats en temps reel
 - Changer les imports de fichiers en local
 - Ajouter font awesome
 
@@ -15,6 +14,3 @@
 
 # utiliser index.pug
 Aller sur pen.new puis dans les parametres de la case html mettre pug dans html preprocessor
-
-# pdf
-le pdf est dans "fonts"

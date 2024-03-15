@@ -76,25 +76,33 @@ const bestHouse = tab => {
   return topHouse;
 }
 
-function showResults() {
-  let courage, ambition, intelligence, good;
+const getUserValues = () => {
+  var [courage, ambition, intelligence, good] = [0, 0, 0, 0];
   
   selectedAnswers.forEach(answer => {
-    answers = answer.split(" ");
-    courage += parseInt(answers[0]);
-    ambition += parseInt(answers[1]);
-    intelligence += parseInt(answers[2]);
-    good += parseInt(answers[3]);
+    values = answer.split(",");
+    courage += parseInt(values[0]);
+    ambition += parseInt(values[1]);
+    intelligence += parseInt(values[2]);
+    good += parseInt(values[3]);
   })
   
-  let player = {
-    "Courage": courage / selectedAnswers.length,
-    "Ambition": ambition / selectedAnswers.length,
-    "Intelligence": intelligence / selectedAnswers.length,
-    "Good": good / selectedAnswers.length
+  console.log(selectedAnswers)
+  
+  let user = {
+    "Courage": courage == 0 ? 0 : courage / selectedAnswers.length,
+    "Ambition": ambition == 0 ? 0 : ambition / selectedAnswers.length,
+    "Intelligence": intelligence == 0 ? 0 : intelligence / selectedAnswers.length,
+    "Good": good == 0 ? 0 : good / selectedAnswers.length
   };
+  
+  return user;
+}
 
-  let characters_distance = addDistances(characters, player);
+function showResults() {
+  user = getUserValues();
+
+  let characters_distance = addDistances(characters, user);
   const closest_neighbours = characters_distance.sort((a, b) => a.Distance - b.Distance).slice(0, K);
   
   document.querySelectorAll("#survey > button").forEach(e => e.remove());
@@ -108,7 +116,6 @@ function loadNextQuestion(e) {
   currentQuestionIndex++;
   
   if (currentQuestionIndex == questions.length) {
-    updateProgressBar(currentQuestionIndex);
     showResults();
     return;
   }
@@ -116,6 +123,7 @@ function loadNextQuestion(e) {
   q("#survey").setAttribute("data-current-question", currentQuestionIndex);
   loadQuestion(currentQuestionIndex);
   updateProgressBar(currentQuestionIndex);
+  updateResults();
 }
 
 function loadQuestion(index) {
@@ -140,19 +148,43 @@ function loadQuestion(index) {
 }
 
 function updateProgressBar(index) {
-  let percentage = parseInt(index / questions.length * 100) + "%";
-  let progressText = index + "/" + questions.length;
+  let percentage = parseInt((index + 1) / questions.length * 100) + "%";
+  let progressText = (index + 1) + "/" + questions.length;
   
   q("#progressBar").style.width = percentage;
   q("#percentage").innerText = percentage;
   q("#progressText").innerText = progressText;
 }
 
+var resultsShowing = false;
+
+function updateResults() {
+  let emptyUser = {"Courage": "*", "Ambition": "*", "Intelligence": "*", "Good": "*"};
+  let user = resultsShowing ? Object.fromEntries(Object.entries(getUserValues()).map(([key, value]) => [key, Math.round(value)])) : emptyUser;
+  
+  q("#display").innerText = Object.entries(user).map(([key, value]) => `${key}: ${value}`).join(' ');
+  
+  q("#toggleResultsDisplay svg").remove();
+  
+  i = document.createElement("i");
+  i.classList.add("fa-regular", resultsShowing ? "fa-eye-slash" : "fa-eye");
+  
+  q("#toggleResultsDisplay").append(i);
+}
+
 function startSurvey() {
-  selectedAnswers, currentQuestionIndex = [], 0;
+  selectedAnswers = [];
+  currentQuestionIndex = 0;
+  
+  updateResults();
   updateProgressBar(0);
   loadQuestion(0);
 }
+  
+q("#toggleResultsDisplay").addEventListener("click", e => {
+  resultsShowing = !resultsShowing;
+  updateResults();
+});
 
 q("#start").addEventListener("click", e => {
   e.srcElement.remove();

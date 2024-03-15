@@ -53,6 +53,11 @@ header img {
   object-fit: cover;
 }
 
+p#subtitle {
+  width: 50vw;
+  margin: 15px auto;
+}
+
 header a {
   text-decoration: none;
   color: grey;
@@ -87,7 +92,7 @@ button:not(.discreet-button):active {
 }
 
 .discreet-button:hover, a:hover {
-  color: white;
+  color: var(--text);
 }
 
 section {
@@ -100,6 +105,19 @@ section {
 
 section#survey {
   border: solid 1px var(--tertiary);
+}
+
+section#results * {
+   margin: 0 20px;
+}
+
+#display {
+  font-family: "Space Mono", monospace;
+}
+
+#toggleResultsDisplay {
+  color: var(--text);
+  padding: 0px;
 }
 
 #progressContainer {
