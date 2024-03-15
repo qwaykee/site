@@ -1,74 +1,74 @@
 [courage, ambition, intelligence, good]
 
 Qu'emporterais tu sur une ile déserte:
-  - [0, 0, 1, 0, Une carte]
-  - [1, 0, 0, 0, Un couteau aiguisé]
-  - [0, 1, -1, 0, Ton télephone]
+  - [2, 4, 9, 2, Une carte]
+  - [9, 5, 2, 2, Un couteau aiguisé]
+  - [2, 7, 0, 1, Ton télephone]
 
 Quand on te prêtes de l'argent, à partir de combien rembourses tu ?:
-  - [0, 0, -1, 2, A partir de 10 centimes]
-  - [0, 0, 0, 1, A partir de 5€]
-  - [0, 0, 1, -2, Quand on me le demande]
+  - [2, 2, 0, 9, A partir de 10 centimes]
+  - [2, 1, 2, 7, A partir de 5€]
+  - [1, 5, 8, 0, Quand on me le demande]
 
 Tu vois un dealer se faire aggresser, que fais tu ?:
-  - [2, 0, 0, 3, Je l'aide - je suis philantrope]
-  - [0, 1, 0, 0, Je le filme - l'arroseur arrosé comme on dit]
-  - [-1, 0, 1, 0, Je passe mon chemin - ni vu ni connu]
+  - [8, 4, 0, 9, Je l'aide - je suis philantrope]
+  - [0, 7, 5, 0, Je le filme - l'arroseur arrosé comme on dit]
+  - [0, 2, 8, 0, Je passe mon chemin - ni vu ni connu]
 
 Tu viens d'être élu Président, quelle est ta première mesure ?:
-  - [0, 1, 0, 0, Je ferme toutes les frontières]
-  - [2, 2, 0, 1, Je déclare la guerre contre le narcotrafiquantisme]
-  - [1, 3, 1, -1, J'envahis la Pologne]
+  - [1, 8, 4, 0, Je ferme toutes les frontières]
+  - [8, 7, 1, 6, Je déclare la guerre contre le narcotrafiquantisme]
+  - [4, 9, 5, 0, J'envahis la Pologne]
 
 La 3e guerre mondiale éclate, en tant que civil seul, que fais tu ?:
-  - [-1, -1, 2, 0, Je vais cacher - ce n'est pas mon problème]
-  - [2, 1, 0, 0, Je m'engage dans l'infanterie]
-  - [1, 0, 0, 3, Je m'engage pour médecin sans frontières]
-  - [1, 1, 1, 0, Je vais faire des stocks au magasin]
+  - [0, 0, 9, 2, Je vais cacher - ce n'est pas mon problème]
+  - [9, 6, 1, 2, Je m'engage dans l'infanterie]
+  - [7, 3, 1, 9, Je m'engage pour médecin sans frontières]
+  - [6, 6, 7, 0, Je vais faire des stocks au magasin]
 
 On te proposes de torturer ton ami jusqu'au traumatisme, mais vous recevez tout les deux 500k€ à la fin, en sachant qu'il n'est pas au courant de l'argent:
-  - [0, 0, 0, 3, Jamais - je ne veux pas lui faire du mal]
-  - [0, -1, 1, 1, Jamais - je ne veux pas de regret]
-  - [0, 1, 1, 0, Oui - je connais mon ami]
-  - [0, 2, 0, -1, Oui - mais c'est juste pour l'argent]
+  - [1, 1, 1, 9, Jamais - je ne veux pas lui faire du mal]
+  - [1, 0, 5, 5, Jamais - je ne veux pas de regret]
+  - [1, 5, 5, 0, Oui - je connais mon ami]
+  - [1, 8, 1, 0, Oui - mais c'est juste pour l'argent]
 
 Quand tu joues a des jeux tu es plutôt:
-  - [0, 2, 0, -1, Sournois et mauvais joueur]
-  - [0, 0, 1, 0, Intelligent et organisé]
-  - [0, 0, 0, 1, Bienveillant et fiable]
+  - [1, 9, 5, 0, Sournois et mauvais joueur]
+  - [1, 5, 9, 0, Intelligent et organisé]
+  - [1, 1, 3, 9, Bienveillant et fiable]
 
 Ta voiture préférée est:
-  - [0, 0, 1, 0, Une fiat multipla - solide et fiable]
-  - [1, 1, 0, 0, Une aston martin valkyrie - rapide et dangereuse]
-  - [0, -1, 0, 1, Je n'aime pas les voitures - je préfère le vélo]
+  - [1, 2, 8, 4, Une fiat multipla - solide et fiable]
+  - [6, 6, 1, 1, Une aston martin valkyrie - rapide et dangereuse]
+  - [2, 0, 5, 8, Je n'aime pas les voitures - je préfère le vélo]
 
 Quel est ton sport préféré:
-  - [1, 0, 0, 0, Le rugby évidemment]
-  - [0, 1, 0, 0, Je préfère le football]
-  - [0, 0, 1, 0, Les échecs bien sûr]
+  - [9, 4, 2, 6, Le rugby évidemment]
+  - [3, 9, 3, 1, Je préfère le football]
+  - [1, 2, 9, 5, Les échecs bien sûr]
 
 Pourrais-t-on te qualifier de farfadet malicieux:
-  - [0, 0, 1, -1, Bien sûr je suis le lutin le plus espiègle de toute la forêt magique]
-  - [1, 0, 0, 0, Non évidemment]
-  - [0, 0, 1, 0, Hein ????]
+  - [1, 5, 9, 0, Bien sûr je suis le lutin le plus espiègle de toute la forêt magique]
+  - [8, 3, 1, 6, Non évidemment]
+  - [1, 1, 8, 1, Hein ????]
 
 Si tu étais un sort tu serais plutôt:
-  - [0, 2, 0, -1, Un sortilège fait pour tuer]
-  - [0, 0, 1, 0, Un sortilège pour dévérouiller toutes les portes]
-  - [1, -1, 0, 1, Un sortilège de protection]
+  - [2, 9, 3, 0, Un sortilège fait pour tuer]
+  - [1, 3, 9, 2, Un sortilège pour dévérouiller toutes les portes]
+  - [2, 0, 4, 9, Un sortilège de protection]
 
 Si tu dois prendre avec toi un personne pour chercher un tresor, tu prendrais plus:
-  - [2, 2, -1, 0, personne, tu te débrouilles très bien tout seul]
-  - [1, 1, 0, 1, un ami a toi]
-  - [2, 3, 0, 1, Jack Sparrow]
-  - [-2, 0, 0, 0, Je n'y vais pas tout simplement]
+  - [8, 8, 0, 1, personne, tu te débrouilles très bien tout seul]
+  - [5, 5, 2, 6, un ami a toi]
+  - [9, 7, 1, 0, Jack Sparrow]
+  - [0, 0, 9, 2, Je n'y vais pas tout simplement]
 
 Si tu pouvais communiquer a un animal, lequel serait-ce:
-  - [1, 1, 0, -1, Un loup féroce]
-  - [0, 0, 1, 0, Un éléphant]
-  - [0, -1, 0, 2, Un mouton]
+  - [8, 8, 2, 0, Un loup féroce]
+  - [1, 0, 9, 5, Un éléphant]
+  - [0, 0, 5, 9, Un mouton]
 
 Quel serait ton lieu de prédilection pour une aventure:
-  - [2, 1, -1, 0, Un volcan en éruption]
-  - [1, 0, 2, 0, Une cité perdue]
-  - [-1, -1, 3, 0, Je préfère rester chez moi...]
+  - [9, 6, 0, 2, Un volcan en éruption]
+  - [5, 1, 9, 0, Une cité perdue]
+  - [0, 0, 9, 3, Je préfère rester chez moi...]

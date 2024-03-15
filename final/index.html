@@ -1,54 +1,41 @@
-<html>
-    <head>
-        <title>Partie 2</title>
-        <style type="text/css">
-            body {
-                text-align: center;
-                background: #262626;
-                font: 1em sans-serif;
-                color: beige;
-                backdrop-filter: blur(20px);
-            }
-
-            button {
-                padding: 5px 30px;
-                border: none;
-                border-radius: 5px;
-            }
-
-            .background-element {
-                
-            }
-        </style>
-    </head>
-    <body>
-        <main>
-            <h1>Le Choixpeau magique</h1>
-            <p>Le Choixpeau magique devine dans quelle maison vous appartenez, en fonction de vos réponses au questionnaire.</p>
-
-            <h2>Commencer le questionnaire?</h2>
-            <p>Le questionnaire comporte 20 questions qui permettra au Choixpeau magique de déterminner votre maison</p>
-            <button id="start">Commencer!</button>
-        </main>
-        <div id="questionnaire">
-
-        </div>
-        <script type="text/javascript">
-            const request = new Request("/questions");
-            
-            setInterval(createBackground, 1000)
-
-            function createBackground() {
-                el = document.createElement("DIV")
-
-            }
-
-            document.querySelector("#start").addEventListener("click", e => {
-                fetch(request)
-                    .then(response => response.json())
-                    .then(json => questions.append(json))
-                    .catch(error => alert(error));
-            });
-        </script>
-    </body>
+<html theme="dark">
+   <head>
+      <title>Partie 2</title>
+      <link rel="icon" type="image/jpg" href="images/favicon.jpg" />
+      <link href="style.css" rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+      <script src="https://kit.fontawesome.com/f30cd79bf5.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <header>
+         <img src="images/icon.png" alt="icon" width="48" />
+         <h1>Le choixpeau magique</h1>
+         <nav><a href="https://github.com/qwaykee/site" target="_blank">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a><button class="discreet-button" id="theme">Theme clair</button></nav>
+      </header>
+      <label for="k">Parametre: Nombre de personnages similaires a chercher</label><input type="number" max="10" min="1" placeholder="K..." id="k" />
+      <p id="subtitle">Le Choixpeau magique devine dans quelle maison vous appartenez, en fonction de vos réponses au questionnaire. Le questionnaire comporte 20 questions qui permettront au Choixpeau magique de déterminer votre maison</p>
+      <button id="startSurvey">Commencer le questionnaire</button>
+      <button id="startCustom">Utiliser des caracteristiques personalisees</button>
+      <section id="custom">
+         <h4 id="result">La maison s'affichera ici</h4>
+         <label for="courage">Courage</label><input type="number" name="courage" min="0" max="10" placeholder="0-10" /><label for="ambition">Ambition</label><input type="number" name="ambition" min="0" max="10" placeholder="0-10"
+            /><label for="intelligence">Intelligence</label><input type="number" name="intelligence" min="0" max="10" placeholder="0-10" /><label for="good">Good</label><input type="number" name="good" min="0" max="10" placeholder="0-10" />
+      </section>
+      <section id="progress">
+         <span id="percentage">0%</span>
+         <div id="progressContainer">
+            <div id="progressBar"></div>
+         </div>
+         <span id="progressText">0/0</span>
+      </section>
+      <section id="survey">
+         <h4 id="question">Texte de la question</h4>
+         <button data-attributes="0,0,0,0">Réponse avec attributs 0 0 0 0</button>
+      </section>
+      <section id="results"><span>Resultats</span><span id="display">Courage: * Ambition: * Intelligence: * Good: *</span><button class="discreet-button" id="toggleResultsDisplay"><i class="fa-regular fa-eye"></i></button><br/><button class="discreet-button" id="replay">Recommencer le questionnaire</button></section>
+      <script src="script.js"></script>
+   </body>
 </html>

@@ -1,20 +1,19 @@
-Goodhtml(theme="dark")
+html(theme="dark")
   head
+    title Partie 2
+
+    link(rel="icon" type="image/jpg" href="images/favicon.jpg")
+    link(href="style.css", rel="stylesheet")
+
     link(rel="preconnect", href="https://fonts.googleapis.com")
     link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
-    link(
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap",
-      rel="stylesheet"
-    )
+    link(href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap", rel="stylesheet")
     link(href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap", rel="stylesheet")
-    title Partie 2
+
+    script(src="https://kit.fontawesome.com/f30cd79bf5.js", crossorigin="anonymous")
   body
     header
-      img(
-        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b555cca6-60b6-412c-8fbd-dc9aaf3c2740/dbfr8a2-2fe28741-69fe-48af-b0a9-fe7fe86c0fac.png/v1/fill/w_400,h_401/harry_potter_icon_by_rickyrgoetz_dbfr8a2-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDAxIiwicGF0aCI6IlwvZlwvYjU1NWNjYTYtNjBiNi00MTJjLThmYmQtZGM5YWFmM2MyNzQwXC9kYmZyOGEyLTJmZTI4NzQxLTY5ZmUtNDhhZi1iMGE5LWZlN2ZlODZjMGZhYy5wbmciLCJ3aWR0aCI6Ijw9NDAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.v1BZfPQijO-x6bBvYn1nKdNGoy__4J5DOOkumZl-5TA",
-        alt="icon",
-        width="48"
-      )
+      img(src="images/icon.png", alt="icon", width="48")
       h1 Le choixpeau magique
       nav
         a(href="https://github.com/qwaykee/site", target='_blank') GitHub #[i.fa-solid.fa-arrow-up-right-from-square]
@@ -57,3 +56,5 @@ Goodhtml(theme="dark")
       button#toggleResultsDisplay.discreet-button #[i.fa-regular.fa-eye]
       br
       button#replay.discreet-button Recommencer le questionnaire
+
+    script(src="script.js")
