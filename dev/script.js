@@ -25,7 +25,8 @@ const questions = [
   ],
 ];
 
-var selectedAnswers, currentQuestionIndex = [], 0;
+var selectedAnswers = [];
+var currentQuestionIndex = currentQuestionIndex;
 
 const characters = [{"House": "Gryffindor", "Name": "Harry James Potter", "Courage": 9, "Ambition": 4, "Intelligence": 5, "Good": 9}, {"House": "Gryffindor", "Name": "Ronald Bilius Weasley", "Courage": 8, "Ambition": 6, "Intelligence": 5, "Good": 9}]
 const K = 3
