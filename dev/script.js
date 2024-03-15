@@ -28,7 +28,7 @@ const questions = [
 var selectedAnswers = [];
 var currentQuestionIndex = currentQuestionIndex;
 
-const characters = [{"House": "Gryffindor", "Name": "Harry James Potter", "Courage": 9, "Ambition": 4, "Intelligence": 5, "Good": 9}, {"House": "Gryffindor", "Name": "Ronald Bilius Weasley", "Courage": 8, "Ambition": 6, "Intelligence": 5, "Good": 9}]
+const characters = [{"House": "Gryffindor", "Name": "Harry James Potter", "Courage": 9, "Ambition": 4, "Intelligence": 5, "Good": 9}, {"House": "Gryffindor", "Name": "Ronald Bilius Weasley", "Courage": 8, "Ambition": 6, "Intelligence": 5, "Good": 9}, {"House": "Gryffindor", "Name": "Ronald Bilius Weasley", "Courage": 8, "Ambition": 6, "Intelligence": 5, "Good": 9}]
 const K = 3
 
 const q = e => document.querySelector(e); // shorthand
@@ -102,12 +102,13 @@ const getUserValues = () => {
 function showResults() {
   user = getUserValues();
 
-  let characters_distance = addDistances(characters, user);
-  const closest_neighbours = characters_distance.sort((a, b) => a.Distance - b.Distance).slice(0, K);
+  let charactersDistance = addDistances(characters, user);
+  const closestNeighbours = charactersDistance.sort((a, b) => a.Distance - b.Distance).slice(0, K);
   
   document.querySelectorAll("#survey > button").forEach(e => e.remove());
   
-  q("#question").innerText = "Le choixpeau a decide que votre maison sera " + bestHouse(closest_neighbours) + " !";
+  q("#question").innerText = `Le choixpeau a decide que votre maison sera ${bestHouse(closestNeighbours)} !
+  Les personnages les plus proches de votre personnalite sont ${closestNeighbours[0]["Name"]}, ${closestNeighbours[1]["Name"]} et ${closestNeighbours[2]["Name"]}`;
 }
 
 function loadNextQuestion(e) {

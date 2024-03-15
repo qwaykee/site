@@ -4,7 +4,6 @@
 - README.md
 - Importer data.json dans script.js
 - Finir questions.yml et changer les valeurs
-- Ajouter KPPVs a la fin du test
 - Changer les imports de fichiers en local
 - Ajouter font awesome
 
