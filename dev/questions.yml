@@ -62,3 +62,13 @@ si tu dois prendre avec toi un personne pour chercher un tresor, tu prendrais pl
   - [1, 1, 0, 1, un ami a toi]
   - [2, 3, 0, 1, Jack Sparrow]
   - [-2, 0, 0, 0, Je n'y vais pas tout simplement]
+
+  si tu pouvais communiquer a un animal, lequel serait-ce:
+    -[1, 1, 0, -1, Un loup féroce]
+    -[0, 0, 1, 0, Un éléphant]
+    -[0, -1, 0, 2, Un mouton]
+
+  Quel serait ton lieu de prédilection pour une aventure:
+    -[2, 1, -1, 0, Un volcan en éruption]
+    -[1, 0, 2, 0, Une cité perdue]
+    -[-1, -1, 3, 0, Je préfère rester chez moi...]
