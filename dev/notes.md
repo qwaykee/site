@@ -4,9 +4,10 @@
 - README.md
 - Importer data.json dans script.js
 - Finir questions.yml
-- Ajouter details a la fin du test -> recommencer, KPPVs
+- Ajouter KPPVs a la fin du test
 - Ajouter resultats en temps reel
 - Changer les imports de fichiers en local
+- Ajouter font awesome
 
 # dev -> final
 - Convertir questions.yml en json et ajouter a script.js

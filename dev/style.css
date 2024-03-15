@@ -22,13 +22,13 @@ html[theme="light"] {
 
 * {
   font-family: "Montserrat", sans-serif;
+  transition: 0.2s;
 }
 
 body {
   text-align: center;
   background: var(--background);
   color: var(--text);
-  transition: 0.2s;
 }
 
 header {
@@ -62,7 +62,6 @@ button {
   background: var(--secondary);
   border-radius: 50px;
   border: solid 1px var(--secondary);
-  box-sizing: border-box;
   color: var(--primary);
   cursor: pointer;
   font-size: 13px;
@@ -71,12 +70,24 @@ button {
   transition: 0.2s;
 }
 
-button:hover {
+button:not(.discreet-button):hover {
   transform: scale(1.02);
 }
 
-button:active {
+button:not(.discreet-button):active {
   transform: scale(0.98);
+}
+
+.discreet-button {
+  background: transparent;
+  border: 0;
+  color: grey;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.discreet-button:hover, a:hover {
+  color: white;
 }
 
 section {
@@ -93,9 +104,9 @@ section#survey {
 
 #progressContainer {
   display: inline-block;
-  width: 60vw;
+  width: 55vw;
   border-radius: 5px;
-  margin: 5px 25px;
+  margin: 5px 20px;
   background: var(--tertiary);
 }
 

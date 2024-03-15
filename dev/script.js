@@ -25,7 +25,7 @@ const questions = [
   ],
 ];
 
-var selectedAnswers = []
+var selectedAnswers = [];
 
 const characters = [{"House": "Gryffindor", "Name": "Harry James Potter", "Courage": 9, "Ambition": 4, "Intelligence": 5, "Good": 9}, {"House": "Gryffindor", "Name": "Ronald Bilius Weasley", "Courage": 8, "Ambition": 6, "Intelligence": 5, "Good": 9}]
 const K = 3
@@ -75,7 +75,7 @@ const bestHouse = tab => {
   return topHouse;
 }
 
-const showResults = () => {
+function showResults() {
   let courage, ambition, intelligence, good;
   
   selectedAnswers.forEach(answer => {
@@ -149,10 +149,18 @@ function updateProgressBar(index) {
   q("#progressText").innerText = progressText;
 }
 
+function startSurvey() {
+  q("#survey").setAttribute("data-current-question", 0);
+  selectedAnswers = [];
+  updateProgressBar(0);
+  loadQuestion(0);
+}
+
 q("#start").addEventListener("click", e => {
   e.srcElement.remove();
   document.querySelectorAll("section").forEach(e => e.style.display = "inline-block");
   
-  updateProgressBar(getCurrentQuestionIndex())
-  loadQuestion(getCurrentQuestionIndex());
+  startSurvey();
 });
+
+q("#replay").addEventListener("click", startSurvey);

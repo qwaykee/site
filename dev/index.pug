@@ -16,8 +16,8 @@ html(theme="dark")
       )
       h1 Le choixpeau magique
       nav
-        a(href="https://github.com/qwaykee/site") GitHub
-        button#theme Theme clair
+        a(href="https://github.com/qwaykee/site", target='_blank') GitHub #[i.fa-solid.fa-arrow-up-right-from-square]
+        button#theme.discreet-button Theme clair
 
     p#subtitle Le Choixpeau magique devine dans quelle maison vous appartenez, #[br] en fonction de vos réponses au questionnaire. #[br] Le questionnaire comporte 20 questions qui permettront #[br] au Choixpeau magique de déterminer votre maison
 
@@ -34,3 +34,4 @@ html(theme="dark")
       button(data-attributes="0,0,0,0") Réponse avec attributs 0 0 0 0
 
     section#results
+      button#replay.discreet-button Recommencer le questionnaire
