@@ -25,7 +25,7 @@ const questions = [
   ],
 ];
 
-var selectedAnswers = [];
+var selectedAnswers, currentQuestionIndex = [], 0;
 
 const characters = [{"House": "Gryffindor", "Name": "Harry James Potter", "Courage": 9, "Ambition": 4, "Intelligence": 5, "Good": 9}, {"House": "Gryffindor", "Name": "Ronald Bilius Weasley", "Courage": 8, "Ambition": 6, "Intelligence": 5, "Good": 9}]
 const K = 3
@@ -86,14 +86,14 @@ function showResults() {
     good += parseInt(answers[3]);
   })
   
-  let player1 = {
+  let player = {
     "Courage": courage / selectedAnswers.length,
     "Ambition": ambition / selectedAnswers.length,
     "Intelligence": intelligence / selectedAnswers.length,
     "Good": good / selectedAnswers.length
   };
 
-  let characters_distance = addDistances(characters, player1);
+  let characters_distance = addDistances(characters, player);
   const closest_neighbours = characters_distance.sort((a, b) => a.Distance - b.Distance).slice(0, K);
   
   document.querySelectorAll("#survey > button").forEach(e => e.remove());
@@ -101,22 +101,20 @@ function showResults() {
   q("#question").innerText = "Le choixpeau a decide que votre maison sera " + bestHouse(closest_neighbours) + " !";
 }
 
-const getCurrentQuestionIndex = () => parseInt(q("#survey").dataset.currentQuestion);
-
 function loadNextQuestion(e) {
   selectedAnswers.push(e.srcElement.dataset.attributes);
   
-  nextQuestionIndex = getCurrentQuestionIndex() + 1;
+  currentQuestionIndex++;
   
-  if (nextQuestionIndex == questions.length) {
-    updateProgressBar(nextQuestionIndex);
+  if (currentQuestionIndex == questions.length) {
+    updateProgressBar(currentQuestionIndex);
     showResults();
     return;
   }
   
-  q("#survey").setAttribute("data-current-question", nextQuestionIndex);
-  loadQuestion(nextQuestionIndex);
-  updateProgressBar(nextQuestionIndex);
+  q("#survey").setAttribute("data-current-question", currentQuestionIndex);
+  loadQuestion(currentQuestionIndex);
+  updateProgressBar(currentQuestionIndex);
 }
 
 function loadQuestion(index) {
@@ -150,8 +148,7 @@ function updateProgressBar(index) {
 }
 
 function startSurvey() {
-  q("#survey").setAttribute("data-current-question", 0);
-  selectedAnswers = [];
+  selectedAnswers, currentQuestionIndex = [], 0;
   updateProgressBar(0);
   loadQuestion(0);
 }
