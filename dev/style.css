@@ -72,7 +72,6 @@ button {
   font-size: 13px;
   margin: 6px 3px;
   padding: 9px 27px;
-  transition: 0.2s;
 }
 
 button:not(.discreet-button):hover {
@@ -92,6 +91,12 @@ button:not(.discreet-button):active {
 }
 
 .discreet-button:hover, a:hover {
+  color: var(--text);
+}
+
+input {
+  background: transparent;
+  border: 0;
   color: var(--text);
 }
 

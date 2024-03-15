@@ -4,6 +4,7 @@
 - README.md
 - Importer data.json dans script.js
 - Finir questions.yml et changer les valeurs
+- Ajouter un selecteur pour la valeur de K (fait) -> Gerer les situations d'ex aequo
 - Changer les imports de fichiers en local
 - Ajouter font awesome
 

@@ -20,10 +20,27 @@ Goodhtml(theme="dark")
         a(href="https://github.com/qwaykee/site", target='_blank') GitHub #[i.fa-solid.fa-arrow-up-right-from-square]
         button#theme.discreet-button Theme clair
 
+    
+    label(for="k") Parametre: Nombre de personnages similaires a chercher
+    input(type="number", max="10", min="1", placeholder="K...")#k
+
     p#subtitle Le Choixpeau magique devine dans quelle maison vous appartenez, en fonction de vos réponses au questionnaire. Le questionnaire comporte 20 questions qui permettront au Choixpeau magique de déterminer votre maison
 
-    button#start Commencer le questionnaire
-
+    button#startSurvey Commencer le questionnaire
+    button#startCustom Utiliser des caracteristiques personalisees
+    
+    section#custom
+      h4#result La maison s'affichera ici
+    
+      label(for="courage") Courage
+      input(type="number", name="courage", min="0", max="10", placeholder="0-10")
+      label(for="ambition") Ambition
+      input(type="number", name="ambition", min="0", max="10", placeholder="0-10")
+      label(for="intelligence") Intelligence
+      input(type="number", name="intelligence", min="0", max="10", placeholder="0-10")
+      label(for="good") Good
+      input(type="number", name="good", min="0", max="10", placeholder="0-10")
+    
     section#progress
       span#percentage 0%
       #progressContainer
