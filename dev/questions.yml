@@ -15,10 +15,6 @@ Tu vois un dealer se faire aggresser, que fais tu ?:
   - [0, 1, 0, 0, Je le filme - l'arroseur arrosé comme on dit]
   - [-1, 0, 1, 0, Je passe mon chemin - ni vu ni connu]
 
-Une GayPride est réprimée tu es plutôt crs ou lgbt:
-  - [0, 0, 1, -1, CRS]
-  - [1, 0, 0, 1, LGBT]
-
 Tu viens d'être élu Président, quelle est ta première mesure ?:
   - [0, 1, 0, 0, Je ferme toutes les frontières]
   - [2, 2, 0, 1, Je déclare la guerre contre le narcotrafiquantisme]
@@ -66,3 +62,13 @@ si tu dois prendre avec toi un personne pour chercher un tresor, tu prendrais pl
   - [1, 1, 0, 1, un ami a toi]
   - [2, 3, 0, 1, Jack Sparrow]
   - [-2, 0, 0, 0, Je n'y vais pas tout simplement]
+
+  si tu pouvais communiquer a un animal, lequel serait-ce:
+    -[1, 1, 0, -1, Un loup féroce]
+    -[0, 0, 1, 0, Un éléphant]
+    -[0, -1, 0, 2, Un mouton]
+
+  Quel serait ton lieu de prédilection pour une aventure:
+    -[2, 1, -1, 0, Un volcan en éruption]
+    -[1, 0, 2, 0, Une cité perdue]
+    -[-1, -1, 3, 0, Je préfère rester chez moi...]
