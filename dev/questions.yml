@@ -20,7 +20,7 @@ Tu viens d'être élu Président, quelle est ta première mesure ?:
   - [2, 2, 0, 1, Je déclare la guerre contre le narcotrafiquantisme]
   - [1, 3, 1, -1, J'envahis la Pologne]
 
-La 3e guerre monidale éclate, en tant que civil seul, que fais tu ?:
+La 3e guerre mondiale éclate, en tant que civil seul, que fais tu ?:
   - [-1, -1, 2, 0, Je vais cacher - ce n'est pas mon problème]
   - [2, 1, 0, 0, Je m'engage dans l'infanterie]
   - [1, 0, 0, 3, Je m'engage pour médecin sans frontières]
@@ -48,27 +48,27 @@ Quel est ton sport préféré:
   - [0, 0, 1, 0, Les échecs bien sûr]
 
 Pourrais-t-on te qualifier de farfadet malicieux:
-- [0, 0, 1, -1, Bien sûr je suis le lutin le plus espiègle de toute la forêt magique]
-- [1, 0, 0, 0, Non évidemment]
-- [0, 0, 1, 0, Hein ????]
+  - [0, 0, 1, -1, Bien sûr je suis le lutin le plus espiègle de toute la forêt magique]
+  - [1, 0, 0, 0, Non évidemment]
+  - [0, 0, 1, 0, Hein ????]
 
 Si tu étais un sort tu serais plutôt:
   - [0, 2, 0, -1, Un sortilège fait pour tuer]
   - [0, 0, 1, 0, Un sortilège pour dévérouiller toutes les portes]
   - [1, -1, 0, 1, Un sortilège de protection]
 
-si tu dois prendre avec toi un personne pour chercher un tresor, tu prendrais plus:
+Si tu dois prendre avec toi un personne pour chercher un tresor, tu prendrais plus:
   - [2, 2, -1, 0, personne, tu te débrouilles très bien tout seul]
   - [1, 1, 0, 1, un ami a toi]
   - [2, 3, 0, 1, Jack Sparrow]
   - [-2, 0, 0, 0, Je n'y vais pas tout simplement]
 
-  si tu pouvais communiquer a un animal, lequel serait-ce:
-    -[1, 1, 0, -1, Un loup féroce]
-    -[0, 0, 1, 0, Un éléphant]
-    -[0, -1, 0, 2, Un mouton]
+Si tu pouvais communiquer a un animal, lequel serait-ce:
+  - [1, 1, 0, -1, Un loup féroce]
+  - [0, 0, 1, 0, Un éléphant]
+  - [0, -1, 0, 2, Un mouton]
 
-  Quel serait ton lieu de prédilection pour une aventure:
-    -[2, 1, -1, 0, Un volcan en éruption]
-    -[1, 0, 2, 0, Une cité perdue]
-    -[-1, -1, 3, 0, Je préfère rester chez moi...]
+Quel serait ton lieu de prédilection pour une aventure:
+  - [2, 1, -1, 0, Un volcan en éruption]
+  - [1, 0, 2, 0, Une cité perdue]
+  - [-1, -1, 3, 0, Je préfère rester chez moi...]
