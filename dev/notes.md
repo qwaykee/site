@@ -1,16 +1,15 @@
 # à faire
-- Faire 20 questions
-- Faire PDF
-- README.md
-- Importer data.json dans script.js
-- Finir questions.yml et changer les valeurs
-- Ajouter un selecteur pour la valeur de K (fait) -> Gerer les situations d'ex aequo
-- Changer les imports de fichiers en local
-- Ajouter font awesome
+- Faire PDF (long)
+- README.md (moyen)
+- Finir questions.yml et changer les valeurs (long)
+- Ajouter un selecteur pour la valeur de K (fait) -> Gerer les situations d'ex aequo (long)
+- Changer les imports de fichiers en local (rapide)
+- Ajouter font awesome (rapide)
+- Passer au final et envoyer (rapide) -> Choixpeau_NOM1_NOM2_NOM3_NOM4.html, Choixpeau_NOM1_NOM2_NOM3_NOM4.zip
 
 # dev -> final
 - Convertir questions.yml en json et ajouter a script.js
 - Convertir pug en html
 
-# utiliser index.pug
-Aller sur pen.new puis dans les parametres de la case html mettre pug dans html preprocessor
+# liens
+https://codepen.io/qwaykee/pen/MWRjvvL
